@@ -155,7 +155,10 @@ input[type="password"]{
 .remember_container{
   align-items: center;
   display: flex;
-  
+}
+.remember_container input[type="radio"]{
+  background: #F7FAFC;
+  border: 1px solid #E8E8E8;
 }
 .remember_container label{
   color: var(--dark);
@@ -205,4 +208,25 @@ button img{
 .sign-up span{
   color: var(--blue);
   cursor: pointer;
+}
+
+@media screen and (max-width:835px){
+  body{
+    background: var(--white);
+  }
+  main{
+    background: var(--white);
+  }
+  .main_left{
+    display: none;
+  }
+  .main_right{
+    width: 100%;
+  }
+  .container_data{
+    margin-top: 71px;
+  }
+  .google{
+    margin-bottom: 138px !important;
+  }
 }
